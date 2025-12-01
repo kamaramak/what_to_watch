@@ -19,4 +19,5 @@ def load_opinions_command():
             db.session.add(opinion)
             db.session.commit()
             counter += 1
+            click.echo(f'Загружено {counter} мнение')
     click.echo(f'Загружено мнений: {counter}')
