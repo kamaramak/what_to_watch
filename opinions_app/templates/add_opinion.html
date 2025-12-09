@@ -10,11 +10,11 @@
           {{ form.csrf_token }}
           {{ form.title(class="form-control form-control-lg py-3 mb-3", placeholder=form.title.label.text) }}
           {% if form.title.errors %}
-              <p class="text-danger">
-                  {% for error in form.title.errors %}
-                          {{ error }}
-                  {% endfor %}
-              </p>
+            <p class="text-danger">
+                {% for error in form.title.errors %}
+                        {{ error }}
+                {% endfor %}
+            </p>
           {% endif %}
           {{ form.source(class="form-control form-control-lg py-3 mb-3", placeholder=form.source.label.text) }}
           {{ form.text(class="form-control form-control-lg py-3 mb-3", placeholder=form.text.label.text, rows="3", cols="40")}}

@@ -31,8 +31,8 @@ async def add_opinion_view():
         # так как функция async_upload_files_to_dropbox() асинхронная.
         urls = await async_upload_files_to_dropbox(form.images.data)
         opinion = Opinion(
-            title=form.title.data, 
-            text=text, 
+            title=form.title.data,
+            text=text,
             source=form.source.data,
             images=urls
         )
